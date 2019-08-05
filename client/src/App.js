@@ -16,7 +16,8 @@ const callApi = async (code) => {
     }).then((resp) => resp.json()).then(function(response) {
 
         if (response.message === 'CORRECT') {
-          document.getElementById("lock-icon").style.backgroundColor = "#4CAF50";
+          var lock = document.getElementsByClassName("lock-icon");
+          lock[0].style.backgroundColor = "#4CAF50";
         }
     });
   }
@@ -43,7 +44,7 @@ const PadButton = ({ value, type }) => {
 
 const Icon = () => {
 
-  return ( <img id="lock-icon" src={lock}  width="50px" height="50px" /> );
+  return ( <img class="lock-icon" src={lock}  width="50px" height="50px" alt="" /> );
 }
 
 const App = () => {

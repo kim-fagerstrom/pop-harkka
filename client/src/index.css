@@ -21,7 +21,7 @@ button.pad:hover {
   color: white;
 }
 
-#lock-icon {
+.lock-icon {
   border:1px solid #000000;
   margin:3px;
   text-align: center;
